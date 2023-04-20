@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="sr">
+  <head>
+    <title>Kontakt</title>
+
+    <meta charset="UTF-8" />
+    <meta name="author" content="Renata Tukic" />
+    <meta name="description" content="heklani i pleteni predmeti" />
+    <meta name="keywords" content="šal, kapa rukavice, top, prsluk, džemper" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="icon" href="img/icon.png.png" type="image/png" sizes="16x16" />
+    <link rel="stylesheet" href="css/site.css" />
+    <!-- <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+  <script src="js/skripte.js"></script> -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.js"
+      integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!--zaglavlje-->
+    <div class="zaglavlje">
+      <div class="zaglavlje-pozadina">
+        <!--navigacija strane-->
+        <nav class="zaglavlje-navigacija">
+          <a class="navigacija" href="index.html">Početna</a>
+          <a class="navigacija" href="galerija.html">Galerija</a>
+          <a class="navigacija" href="o nama.html">o nama</a>
+          <img src="img/moon.webp" alt="moon" id="theme1" />
+          <img src="img/the-sun.webp" alt="sun" id="theme2" />
+        </nav>
+        <!--navigacija kraj-->
+
+        <!--naslov strane-->
+        <header class="zaglavlje-naslov">
+          <h1 id="naslov">Heklarica</h1>
+          <p>Dobro došli!</p>
+        </header>
+        <div class="skrol">
+          <a href="#glavni">pogledaj više</a>
+        </div>
+      </div>
+    </div>
+    <!--zaglavlje kraj-->
+
+    <!--forma za kontakt-->
+    <section class="glavni" id="glavni">
+      <form action="#" method="#">
+        <fildset>
+          <legend>Informacije:</legend>
+
+          <input
+            type="text"
+            placeholder="Unesite ime"
+            class="rounded d-block m-2 p-2 w-100"
+            name="ime"
+          />
+
+          <input
+            type="text"
+            placeholder="Unesite prezime"
+            class="rounded d-block m-2 p-2 w-100"
+            name="prezime"
+          />
+
+          <input
+            type="email"
+            placeholder="unesite mail"
+            class="rounded d-block m-2 p-2 w-100"
+            name="mail"
+          />
+
+          <input
+            type="number"
+            placeholder="unesite telefon"
+            class="rounded d-block m-2 p-2 w-100"
+            name="tel"
+          />
+          <br />
+          <input type="submit" value="pošalji 1" class="w-50" />
+          <button type="submit" class="w-40">pošalji 2</button>
+        </fildset>
+      </form>
+    </section>
+
+    <!--forma ya kontakt kraj-->
+    <form>
+      <p>pitanja</p>
+      <textarea
+        cols="50"
+        rows="10"
+        class="d-block w-80 m-2 p-2 rounded"
+        name="poruka"
+      >
+Postavi pitanje</textarea
+      >
+
+      <input type="submit" value="pošalji" name="submit" />
+    </form>
+
+    <form>
+      <div class="pozicija">
+        <h2>šta najviše volite</h2>
+        <div class="unutra">
+          <select>
+            <option value="podmetac">podmetač</option>
+            <option value="top">top</option>
+            <option value="sal" selected>šal</option>
+            <option value="prsluk">prsluk</option>
+          </select>
+        </div>
+      </div>
+    </form>
+
+    <form>
+      Utisci:<br />
+      <input type="checkbox" name="utisci" value="korisno" />korisno<br />
+      <input type="checkbox" name="utisci" value="lepo" checked />lepo<br />
+      <input
+        type="checkbox"
+        name="utisci"
+        value="inspirativno"
+      />inspirativno<br />
+      <input type="checkbox" name="utisci" value="nedovrseno" />nedovršeno<br />
+      <input type="submit" value="pošalji" />
+    </form>
+
+    <form>
+      <label for="male">Muški</label>
+      <input type="radio" name="gender" id="male" value="male" />
+      <label for="female">Ženski</label>
+      <input type="radio" name="gender" id="female" value="female" checked />
+      <button type="submit">pošalji</button>
+    </form>
+
+    <footer class="podnozje">
+      <h3>Hvala na poseti</h3>
+      <p>Za dodatne informacije pratite moj sajt</p>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/skripte.js"></script>
+  </body>
+</html>

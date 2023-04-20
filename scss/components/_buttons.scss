@@ -1,0 +1,8 @@
+button,
+input[type="submit"] {
+  @include button(red, white);
+  &:hover {
+    background: white;
+    color: $b-background;
+  }
+}
