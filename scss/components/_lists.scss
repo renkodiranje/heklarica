@@ -1,48 +1,52 @@
-
 //ne radi popraviti
-.lista  { 
-    background: $listcolor-b;
-    color: $listcolor;
-    padding: 20px;
-    list-style-position: inside;
+.lista {
+  background: $listcolor-b;
+  color: $listcolor;
+  padding: 20px;
+  list-style-position: inside;
 
-     .prva {
-    border: 2px double;
+  &.prva {
+    padding-left: 20px;
     text-align: center;
-}
-    .druga {
+  }
+  &.druga {
+    @extend .prva;
     font-weight: 400;
-}
-    .treca {
-    text-align: center;
-    border-radius: 20px;
-}
-    .cetvrta {
-   box-shadow:  0 2px 4px 2px black; 
-    width: 40%;
-        &-li .cetvrta li {
-    border: 1px double white;
-    font-weight: 300;
-    margin: 10px;
-    background: $listcolor-b;
-    box-shadow:  0 1px 1px 1px;
-    padding: 5px;}
-}
-
-    table {
-    margin: 10px;
-    th{ text-transform: capitalize;}
-    td {
-        opacity: 0.6;
-        &:hover {
-            opacity: 1;
-        }
-       }
-    
-     }
-     caption { 
-    margin: 10px;
-    padding: 10px;
-   
+    padding: 5px 0;
+    dt {
+      text-transform: capitalize;
     }
+  }
+  &.treca {
+    @extend .prva;
+    text-transform: uppercase;
+  }
+  .cetvrta {
+    box-shadow: 0 2px 4px 2px black;
+    width: 40%;
+    &-li .cetvrta li {
+      border: 1px double white;
+      font-weight: 300;
+      margin: 10px;
+      background: $listcolor-b;
+      box-shadow: 0 1px 1px 1px;
+      padding: 5px;
+    }
+  }
+}
+table {
+  margin: 10px;
+  th {
+    text-transform: capitalize;
+  }
+  td {
+    opacity: 0.6;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+caption {
+  margin: 10px;
+  padding: 10px;
 }
