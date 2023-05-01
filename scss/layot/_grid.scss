@@ -21,7 +21,8 @@
       text-align: justify;
       padding: 5px;
     }
-    .lekcija {
+    .lekcija,
+    article {
       padding: 5px;
       width: 90%;
       margin: 4% auto;
@@ -53,7 +54,7 @@
         text-align: center;
       }
       nav {
-        justify-content: left;
+        justify-content: center;
         margin: 0;
         a {
           font-size: 12px;
