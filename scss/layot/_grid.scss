@@ -29,55 +29,65 @@
     .list li {
       text-align: left;
     }
+    form {
+      text-indent: 0px;
+      padding: 5%;
+      textarea {
+        width: 80%;
+        height: 60px;
+        margin: 5% auto;
+      }
+      select {
+        @extend textarea;
+      }
+    }
     dl dd,
     dt {
       text-align: left;
       text-indent: 0;
       padding: 8px;
     }
-  }
-  .zaglavlje {
-    p {
-      text-align: center;
-    }
-    nav {
-      justify-content: left;
-      margin: 0;
-      a {
-        font-size: 12px;
-      }
-    }
 
-    header {
-      //padding: 35vh 0 0;
-      font-weight: bold;
-      #naslov {
-        color: $h-color;
-        font-size: 2em;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        position: relative;
-        padding: 20px 0;
-        margin: 20px auto;
-        background: rgba(255, 255, 255, 0.3);
-        border-radius: 50%;
-        font-family: "Cinzel";
+    .zaglavlje {
+      p {
+        text-align: center;
       }
-    }
-    textarea {
-      width: 90%;
-      margin: 0 5%;
+      nav {
+        justify-content: left;
+        margin: 0;
+        a {
+          font-size: 12px;
+        }
+      }
+
+      header {
+        //padding: 35vh 0 0;
+        font-weight: bold;
+        #naslov {
+          color: $h-color;
+          font-size: 2em;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          position: relative;
+          padding: 20px 0;
+          margin: 20px auto;
+          background: rgba(255, 255, 255, 0.3);
+          border-radius: 50%;
+          font-family: "Cinzel";
+        }
+      }
     }
   }
 
   table {
     margin: 5% auto;
+
     tr,
     td,
     th {
       padding: 1px;
       margin: 1px;
-      font-size: 10px;
+      font-size: 8px;
     }
   }
 
