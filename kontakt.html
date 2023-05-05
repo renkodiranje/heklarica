@@ -59,40 +59,45 @@
 
     <!--forma za kontakt-->
     <section class="glavni" id="glavni">
-      <form action="#" method="#">
+      <form action="#" method="#" id="kontakt" novalidate>
         <fieldset>
           <legend>Informacije:</legend>
 
           <input
             type="text"
             placeholder="Unesite ime"
-            class="rounded d-block m-2 p-2 w-100"
+            class="form-control rounded d-block m-2 p-2 w-100"
             name="ime"
+            required
           />
 
           <input
             type="text"
             placeholder="Unesite prezime"
-            class="rounded d-block m-2 p-2 w-100"
+            class="form-control rounded d-block m-2 p-2 w-100"
             name="prezime"
+            required
           />
 
           <input
             type="email"
             placeholder="unesite mail"
-            class="rounded d-block m-2 p-2 w-100"
+            class="form-control rounded d-block m-2 p-2 w-100"
             name="mail"
+            required
           />
 
           <input
-            type="number"
+            type="tel"
+            pattern="[0-9]{10}"
             placeholder="unesite telefon"
-            class="rounded d-block m-2 p-2 w-100"
+            class="form-control rounded d-block m-2 p-2 w-100"
             name="tel"
+            required
           />
           <br />
-          <input type="submit" value="pošalji 1" class="w-50" />
-          <button type="submit" class="w-40">pošalji 2</button>
+          <input type="submit" value="pošalji 1" class="w-50 form-control" />
+          
         </fildset>
       </form>
     </section>
@@ -116,7 +121,7 @@ Postavi pitanje</textarea
       <div class="pozicija">
         <h2>šta najviše volite</h2>
         <div class="unutra">
-          <select>
+          <select class="form-select">
             <option value="podmetac">podmetač</option>
             <option value="top">top</option>
             <option value="sal" selected>šal</option>
@@ -126,25 +131,34 @@ Postavi pitanje</textarea
       </div>
     </form>
 
-    <form>
+    <form >
       Utisci:<br />
-      <input type="checkbox" name="utisci" value="korisno" />korisno<br />
-      <input type="checkbox" name="utisci" value="lepo" checked />lepo<br />
-      <input
-        type="checkbox"
-        name="utisci"
-        value="inspirativno"
-      />inspirativno<br />
-      <input type="checkbox" name="utisci" value="nedovrseno" />nedovršeno<br />
-      <input type="submit" value="pošalji" />
+      <div class="form-check m-4">
+        <input type="checkbox" name="utisci" value="dobro" id="dobro" class="form-check-input"/>
+        <label for="dobro" class="form-check-label">Dobro</label>
+      </div>
+      <div class="form-check m-4">
+        <input type="checkbox" name="utisci" value="lepo" id="lepo" class="form-check-input"/>
+        <label for="lepo" class="form-check-label">Lepo</label>
+      </div>
+      <div class="form-check m-4">
+        <input type="checkbox" name="utisci" value="inspirativno" id="inspirativno" class="form-check-input" checked/>
+        <label for="inspirativno" class="form-check-label">inspirativno</label>
+      </div>
+     
+      <input type="submit" value="pošalji" class="m-4" />
     </form>
 
-    <form>
-      <label for="male">Muški</label>
-      <input type="radio" name="gender" id="male" value="male" />
-      <label for="female">Ženski</label>
-      <input type="radio" name="gender" id="female" value="female" checked />
-      <button type="submit">pošalji</button>
+    <form id="radio">
+      Pol:<br>
+      
+      <input type="radio" name="gender" id="male" value="male" class="m-2"/>
+      <label for="male" class="mt-4 m-1" >Muški</label>
+      <br>
+      <input type="radio" name="gender" id="female" value="female" checked class="m-2" />
+      <label for="female" class="m-1">Ženski</label>
+      <br>
+      <button type="submit" class="m-md-5">pošalji</button>
     </form>
 
     <footer class="podnozje">

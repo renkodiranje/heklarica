@@ -1,9 +1,10 @@
 form {
   @extend article;
+  text-indent: 0;
   text-align: justify;
   input[type="text"],
   input[type="email"],
-  input[type="number"] {
+  input[type="tel"] {
     width: 25%;
     padding-bottom: 5px;
   }
@@ -26,5 +27,9 @@ form {
     padding: 10px;
     margin: 10px;
     width: 300px;
+  }
+  .form-check,
+  label {
+    text-indent: 0;
   }
 }

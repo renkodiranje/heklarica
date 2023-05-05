@@ -25,3 +25,10 @@ $(document).ready(function () {
     $("#theme1").css("display", "inline-block");
   });
 });
+
+$("#kontakt").submit(function (e) {
+  if (!this.checkValidity()) {
+    e.preventDefault();
+  }
+  $(this).addClass("was-validated");
+});
